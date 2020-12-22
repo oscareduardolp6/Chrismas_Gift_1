@@ -1,0 +1,23 @@
+
+body{
+    enable-background: accumulate;
+    background-image: url("Images/fondo.jpg");
+}
+
+#main{
+    display: block;
+}
+
+#Santa{
+    height: 10%;
+    width: 10%;
+    margin-left: 20%;
+}
+
+@media screen and (orientation : Portrait ){
+    #Santa{
+        margin-left: 35%;
+        height: 15%;
+        width: 15%;
+    }
+}
