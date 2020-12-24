@@ -1,3 +1,7 @@
+#div_arbol{
+    background-image: url("Images/Arbol.png") no-repeat center center;
+    background-size: cover;
+}
 
 body{
     enable-background: accumulate;
@@ -27,9 +31,54 @@ body{
         width: 50%;
     }
 
+    #arbol{
+        margin-right: 30%; 
+        margin-top: 20%; 
+        margin-left: -10%;
+        position: absolute; 
+        height: 400px;
+        min-width: 600px;
+    }
+
+    .regalos{
+        width: 45%;
+        position: absolute;
+        margin-top: 110%;
+        margin-left: 30%;
+        z-index: 1;
+    }
+
     #click_img{
         margin-left: 15%;
+
     }
+
+    .etiquetas{
+        width: 25%;
+        transform: rotate(45deg);
+        margin-top: 114%;
+        margin-left: 15%;
+    }
+
+    #texto_etiqueta{
+        color: blueviolet;
+        margin-top: -15%;
+        position: absolute;
+        margin-left: 16%;
+        size: 5px;
+    }
+}
+
+.regalo{
+    width: 250px;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 250px;
+}
+
+#arbol{
+    width: 80%;
+    position: absolute;
 }
 
 #prueba{
