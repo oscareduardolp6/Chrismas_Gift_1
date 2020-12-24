@@ -8,16 +8,47 @@ body{
     display: block;
 }
 
+#santa{
+    position: relative;
+}
+
 #Santa{
-    height: 10%;
-    width: 10%;
+    height: 15%;
+    width: 15%;
     margin-left: 20%;
+    cursor: pointer;
 }
 
 @media screen and (orientation : Portrait ){
     #Santa{
-        margin-left: 35%;
-        height: 15%;
-        width: 15%;
+        margin-left: 5%;
+        position: relative;
+        height: 50%;
+        width: 50%;
     }
+
+    #click_img{
+        margin-left: 15%;
+    }
+}
+
+#prueba{
+    background-color: chartreuse;
+    width: 100px;
+    height: 150px;
+}
+
+
+#santaDiv{
+    width: 100%;
+}
+
+.SantaMov {
+    display: flex;
+    padding-left: 65%;
+    animation: marquee 6s linear infinite
+}
+@keyframes marquee {
+    100%   { transform: translate(0, 0); }
+    0% { transform: translate(-100%, 0); }
 }

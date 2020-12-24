@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,49 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <title>Feliz Navidad &lt;3</title>
 </head>
+
 <body>
     <div id="main">
-        <div id="santa">
-            <img src="Images/Santa.png" alt="Trineo" id="Santa">
+        <div id="santaDiv">
+            <img src="Images/edy-gif-2.gif" alt="Trineo" id="Santa" onclick="felizNavidad()">
+            <br>
+            <img src="Images/DameClick.png" alt="Dame Click" id="click_img" style="position: absolute; height: 200px; margin-right: 90%;" >
+        </div>
+        <br>
+        <div id="div_arbol" style="align-content: left;" >
+            <img src="Images/Arbol.png" alt="" width="200%"  style="margin-right: 20%; margin-top: 20%; position: absolute; margin-left: -50%;">
         </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var persona = "Mariano";
+
+    window.addEventListener("load", 
+    function(){
+        setTimeout(hideDialog, 1000);
+
+    }, false)
+
+    function hideDialog(){
+        let santa = document.getElementById('Santa');
+        let dialogo = document.getElementById('click_img');
+        santa.className = "SantaMov";
+        dialogo.style.display = 'none';
+    }
+
+    function felizNavidad() {
+        Swal.fire({
+            title: 'Feliz Navidad',
+            text: 'Te quiero mucho ' + persona,
+            imageUrl: 'Images/like.png',
+            imageWidth: 200,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+            animation: true
+        })
+    }
+
+</script>
+
 </html>
